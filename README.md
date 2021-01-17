@@ -21,7 +21,7 @@ set transfer rate for account,
 set a trustline for the account,
 get transaction history (unable to get some transaction history using ripple lib like checks so added code using rippled-ws-client)
 
-Not tested setTrustline.js or CreateDEXoffer.js
+Not tested setTrustline.js, CreateDEXoffer.js or getTransactionHistory.js
 
 getOrderBook.js doesnt work (or not complete)
 
