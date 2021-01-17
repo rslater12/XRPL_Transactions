@@ -1,5 +1,5 @@
 # XRPL_Transactions
-Some XRP Transaction Types for the XRPL.
+XRP Transaction Types for the XRPL.
 
 added and tested the follwoing either on Livenet or Testnet.
 
