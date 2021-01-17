@@ -19,6 +19,7 @@ previoulsy effecting transactions,
 set require destination tag for account,
 set transfer rate for account,
 set a trustline for the account,
+get transaction history (unable to get some transaction history using ripple lib like checks so added code using rippled-ws-client)
 
 Not tested setTrustline.js or CreateDEXoffer.js
 
