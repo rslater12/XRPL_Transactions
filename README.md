@@ -23,5 +23,4 @@ get transaction history (unable to get some transaction history using ripple lib
 
 Not tested setTrustline.js, CreateDEXoffer.js or getTransactionHistory.js
 
-getOrderBook.js doesnt work (or not complete)
-
+added IOU Payment
