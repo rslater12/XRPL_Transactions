@@ -14,7 +14,8 @@ const trust = {
     
       "currency": cur,
       "counterparty": issuer,
-      "limit": "100"
+      "limit": "100",
+	"Flags": 131072
  
 }
 
