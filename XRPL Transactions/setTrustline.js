@@ -11,17 +11,11 @@ var issuer = "";
 var cur = "";
 
 const trust = {
-    "TransactionType": "TrustSet",
-    "Account": Address,
-    "Fee": "12",
-    "Flags": 262144,
-    "LastLedgerSequence": 8007750,
-    "LimitAmount": {
+    
       "currency": cur,
-      "issuer": issuer,
-      "value": "100"
-    },
-    "Sequence": 12
+      "counterparty": issuer,
+      "limit": "100"
+ 
 }
 
 	api.connect().then(() => {
