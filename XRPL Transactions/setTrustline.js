@@ -1,27 +1,25 @@
 const RippleAPI = require('ripple-lib').RippleAPI;
-const api = new RippleAPI({server: 'wss://s.altnet.rippletest.net:51233'}); // testnet
+const api = new RippleAPI({server: 'wss://testnet.xrpl-labs.com'}); // testnet
 
 const Address = ''; //sender/source address
 const secret = ''; // secret key
 
-/*!!!!!!!!!!!Not Tested!!!!!!!!!*/
+
 async function setTrustline() {
 
 var issuer = "";
 var cur = "";
 
 const trust = {
-    
-      "currency": cur,
-      "counterparty": issuer,
-      "limit": "100",
-	"Flags": 131072
- 
+  "limit": "1000000",
+        "currency": "EUR",
+        "counterparty": "",
+        "Flags": 131072
 }
 
 	api.connect().then(() => {
 	  console.log('Connected...');
-	  return api.prepareTrustline(Address, payment).then(prepared => {
+	  return api.prepareTrustline(Address, trust).then(prepared => {
 	    console.log('Payment transaction prepared...');
 	    const {signedTransaction} = api.sign(prepared.txJSON, secret);
 	    console.log('Payment transaction signed...');

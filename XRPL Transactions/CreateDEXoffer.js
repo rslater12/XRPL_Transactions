@@ -1,26 +1,24 @@
 const RippleAPI = require('ripple-lib').RippleAPI;
-const api = new RippleAPI({server: 'wss://s.altnet.rippletest.net:51233'}); // testnet
+const api = new RippleAPI({server: 'wss://testnet.xrpl-labs.com'}); // testnet
 
 const Address = ''; //sender/source address
 const secret = ''; // secret key
-
-/*!!!!!!!!!!!!!!!!!!Not Tested!!!!!!!!!!!!!!!!!!!*/
 
 async function createoffer(){
 
     const offercreate = {
         "direction": "sell",
         "quantity": {
-          "currency": "USD",
-          "counterparty": "rhub8VRN55s94qWKDv6jmDy1pUykJzF3wq",
-          "value": "10.1"
+          "currency": "EUR",
+          "counterparty": "",
+          "value": "60"
         },
         "totalPrice": {
-          "currency": "drops",
-          "value": "2000000"
+          "currency": "XRP",
+          "value": "94"
         },
-        "passive": false,
-        "fillOrKill": true
+        //"passive": false,
+        "fillOrKill": false
       };
 
 api.connect().then(() => {
