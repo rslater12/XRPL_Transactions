@@ -11,10 +11,10 @@ var issuer = "";
 var cur = "";
 
 const trust = {
-  "limit": "1000000",
-        "currency": "EUR",
-        "counterparty": "",
-        "Flags": 131072
+    "limit": "10000000",
+        "currency": cur,
+        "counterparty": issuer,
+        "ripplingDisabled": true
 }
 
 	api.connect().then(() => {
